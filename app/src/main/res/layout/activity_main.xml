@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andorid.hangouts.MainActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:src="@drawable/cff"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:text="The Luxury "
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#663300"
+        android:paddingTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="BEGINS"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/download"/>
+    <TextView
+        android:text="Choose Your Order.."
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        android:layout_marginStart="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="cappuchino"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:text = "-"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="decrements"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "0"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/quantity_text_view"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text = "+"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="increments"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Expresso"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="2dp"
+            android:text = "-"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="decrement"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "0"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/quantities_text_view"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:text = "+"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="increment"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="ORDER"
+        android:onClick="submitOrder"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#248f8f"
+            android:id="@+id/price_text_view"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Calculating..."
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</LinearLayout>
